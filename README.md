@@ -1,39 +1,105 @@
-# 📖 StoryBook
+# 📚 Knowle
 
-**StoryBook** adalah platform web sederhana untuk menulis dan membaca cerita buatan pengguna. Cocok untuk pelajar, penulis pemula, atau siapa saja yang ingin membagikan kisah uniknya secara online.
+Platform berbagi pengetahuan untuk komunitas Indonesia. Tulis, baca, dan diskusi bersama.
 
-> “Satu cerita bisa mengubah segalanya.” — StoryBook ✨
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![MongoDB](https://img.shields.io/badge/MongoDB-green?logo=mongodb)
 
-## 🚀 Fitur Utama
+## ✨ Fitur
 
-- ✍️ **Tulis Cerita**: Buat dan unggah cerita kamu sendiri
-- 📚 **Baca Cerita Lain**: Jelajahi cerita buatan pengguna lain
-- 💾 **Disimpan di MongoDB**: Semua cerita tersimpan secara aman
-- 🎨 **UI Responsive**: Dibuat dengan Tailwind CSS
-- 🧼 **Clean UX**: Simple, ringan, dan fokus ke konten
+- 📝 **Tulis Artikel** - Editor modern dengan formatting lengkap
+- 💬 **Tanya Jawab** - Forum diskusi dan Q&A
+- 🔍 **Pencarian** - Temukan artikel dengan mudah
+- 👤 **Profil** - Kelola profil dan lihat statistik
+- 💾 **Draft Privat** - Simpan tulisan sebelum dipublikasi
+- 📱 **Responsif** - Tampilan optimal di semua device
 
-## 🔧 Teknologi yang Digunakan
+## 🛠️ Tech Stack
 
-- **Next.js** – Framework React untuk SSR & API
-- **Tailwind CSS** – Utility-first CSS framework
-- **MongoDB** – NoSQL database untuk menyimpan cerita
-- **TypeScript** – Supaya development makin solid
-- **Zustand** – Manajemen state yang simpel tapi powerfull
+- **Framework:** Next.js 15 (App Router)
+- **Language:** TypeScript
+- **Database:** MongoDB + Mongoose
+- **Auth:** JWT (Access & Refresh Token)
+- **Image Storage:** ImageKit
+- **Styling:** CSS-in-JS + Bootstrap
 
-## 💻 Cara Menjalankan di Lokal
+## 🚀 Getting Started
 
-1. **Clone repo-nya**
+### Prerequisites
+
+- Node.js 18+
+- MongoDB database
+- ImageKit account (opsional)
+
+### Installation
+
+1. Clone repository
 ```bash
-git clone https://github.com/MFathinHalim/StoryBook.git
-cd StoryBook
+git clone https://github.com/romitechdev/knowle.git
+cd knowle
 ```
-2. **Install dependencies**
-3. **setup the env**
 
-## 🤝 Kontribusi
-Buka pull request atau issue kalau kamu punya ide atau nemu bug! Yuk, bikin StoryBook lebih seru bareng-bareng 💡
+2. Install dependencies
+```bash
+npm install
+```
 
-## 📄 Lisensi
-Proyek ini menggunakan lisensi MIT – feel free to explore, fork, dan gunakan sesuai kebutuhan.
+3. Setup environment variables
+```bash
+cp .env.example .env
+```
 
-> Dibuat dengan ❤️ oleh M. Fathin Halim – karena setiap orang punya cerita yang pantas untuk diceritakan 📚💬
+Edit `.env` dengan konfigurasi kamu:
+```env
+MONGODBURI=mongodb+srv://...
+JWT_SECRET_KEY=your-secret-key
+publicImg=your-imagekit-public-key
+privateImg=your-imagekit-private-key
+urlEndpoint=https://ik.imagekit.io/your_id
+```
+
+4. Run development server
+```bash
+npm run dev
+```
+
+5. Open [http://localhost:3000](http://localhost:3000)
+
+## 📁 Project Structure
+
+```
+src/
+├── app/              # Next.js App Router pages
+│   ├── api/          # API routes
+│   ├── book/         # Book pages (add, edit, publish, questions)
+│   ├── profile/      # User profile
+│   └── ...
+├── components/       # Reusable components
+├── controllers/      # Business logic
+├── models/           # Mongoose models
+└── utils/            # Utilities
+```
+
+## 🌐 Deployment
+
+### Vercel (Recommended)
+
+1. Push ke GitHub
+2. Import project di [Vercel](https://vercel.com)
+3. Set environment variables
+4. Deploy!
+
+## 📄 License
+
+MIT License - bebas digunakan dan dimodifikasi.
+
+## 👤 Author
+
+**Romi**
+
+- GitHub: [@romitechdev](https://github.com/romitechdev)
+
+---
+
+Made with ❤️ by Romi
