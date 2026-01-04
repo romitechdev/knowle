@@ -77,10 +77,10 @@ export const metadata: Metadata = {
         },
     },
 
-    // Verification (optional - add your own)
-    // verification: {
-    //     google: "your-google-verification-code",
-    // },
+    // Google Site Verification
+    verification: {
+        google: "CC6bjZ45EFPO-vkaeJE8sfjrf5umq-IyAiSuhYUyfpc",
+    },
 
     // Alternate languages
     alternates: {
