@@ -217,7 +217,7 @@ export default function GetBook() {
       {book.cover && (
         <div style={{
           position: "relative",
-          height: "320px",
+          height: "clamp(200px, 40vw, 320px)",
           background: `linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), url(${book.cover})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -263,7 +263,7 @@ export default function GetBook() {
               overflow: "hidden",
             }}>
               {/* Header */}
-              <div style={{ padding: "32px 32px 24px" }}>
+              <div style={{ padding: "clamp(16px, 4vw, 32px) clamp(16px, 4vw, 32px) clamp(16px, 3vw, 24px)" }}>
                 {/* Meta */}
                 <div style={{
                   display: "flex",
@@ -445,7 +445,7 @@ export default function GetBook() {
               </div>
 
               {/* Content */}
-              <div style={{ padding: "0 32px 32px" }}>
+              <div style={{ padding: "0 clamp(16px, 4vw, 32px) clamp(16px, 4vw, 32px)" }}>
                 <article
                   style={{
                     fontSize: "1.1rem",
@@ -467,7 +467,7 @@ export default function GetBook() {
               overflow: "hidden",
             }}>
               <div style={{
-                padding: "24px 32px",
+                padding: "clamp(16px, 3vw, 24px) clamp(16px, 4vw, 32px)",
                 borderBottom: "1px solid #f1f5f9",
               }}>
                 <h3 style={{
@@ -484,7 +484,7 @@ export default function GetBook() {
                 </h3>
               </div>
 
-              <div style={{ padding: "24px 32px" }}>
+              <div style={{ padding: "clamp(16px, 3vw, 24px) clamp(16px, 4vw, 32px)" }}>
                 {/* Comment Input */}
                 {isLoggedIn ? (
                   <div style={{ marginBottom: "24px" }}>

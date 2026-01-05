@@ -42,8 +42,8 @@ export default function Homepage() {
         display: "flex",
         alignItems: "center",
         background: "linear-gradient(180deg, #fff 0%, #f8fafc 100%)",
-        paddingTop: "60px",
-        paddingBottom: "80px",
+        paddingTop: "clamp(40px, 8vw, 80px)",
+        paddingBottom: "clamp(40px, 8vw, 80px)",
         position: "relative",
         overflow: "hidden",
       }}>
@@ -227,7 +227,7 @@ export default function Homepage() {
 
       {/* What Can You Do Section */}
       <section style={{
-        padding: "100px 0",
+        padding: "clamp(48px, 8vw, 100px) 0",
         background: "#fff",
       }}>
         <div className="container">
@@ -359,7 +359,7 @@ export default function Homepage() {
 
       {/* Why Knowle Section */}
       <section style={{
-        padding: "100px 0",
+        padding: "clamp(48px, 8vw, 100px) 0",
         background: "linear-gradient(180deg, #f8fafc 0%, #fff 100%)",
       }}>
         <div className="container">
@@ -432,8 +432,8 @@ export default function Homepage() {
             {/* Right - Testimonial */}
             <div style={{
               background: "#fff",
-              borderRadius: "24px",
-              padding: "40px",
+              borderRadius: "clamp(16px, 3vw, 24px)",
+              padding: "clamp(24px, 4vw, 40px)",
               boxShadow: "0 20px 60px rgba(0,0,0,0.08)",
               border: "1px solid #f1f5f9",
             }}>
@@ -480,7 +480,7 @@ export default function Homepage() {
 
       {/* CTA Section */}
       <section style={{
-        padding: "100px 0",
+        padding: "clamp(48px, 8vw, 100px) 0",
         background: "linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%)",
         position: "relative",
         overflow: "hidden",

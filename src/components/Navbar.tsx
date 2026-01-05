@@ -270,26 +270,101 @@ export default function Navbar() {
                         borderTop: "1px solid #e2e8f0",
                         marginTop: "12px",
                     }} className="d-md-none">
+                        {/* Mobile Search */}
+                        <form onSubmit={handleSearch} style={{ marginBottom: "16px" }}>
+                            <div style={{ position: "relative" }}>
+                                <FontAwesomeIcon
+                                    icon={faSearch}
+                                    style={{
+                                        position: "absolute",
+                                        left: "14px",
+                                        top: "50%",
+                                        transform: "translateY(-50%)",
+                                        color: "#94a3b8",
+                                    }}
+                                />
+                                <input
+                                    type="text"
+                                    placeholder="Cari..."
+                                    value={search}
+                                    onChange={(e) => setSearch(e.target.value)}
+                                    style={{
+                                        width: "100%",
+                                        padding: "12px 16px 12px 42px",
+                                        border: "1px solid #e2e8f0",
+                                        borderRadius: "10px",
+                                        fontSize: "0.95rem",
+                                        background: "#f8fafc",
+                                        color: "#1e293b",
+                                        outline: "none",
+                                    }}
+                                />
+                            </div>
+                        </form>
                         <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-                            <a href="/book/publish" style={{ padding: "12px", borderRadius: "8px", color: "#64748b", textDecoration: "none", fontWeight: 500 }}>
-                                <FontAwesomeIcon icon={faGlobe} style={{ marginRight: "10px" }} />
+                            <a href="/book/publish" style={{
+                                padding: "14px 12px",
+                                borderRadius: "10px",
+                                color: currentPage === "/book/publish" ? "#6366f1" : "#64748b",
+                                background: currentPage === "/book/publish" ? "#eef2ff" : "transparent",
+                                textDecoration: "none",
+                                fontWeight: 500,
+                                display: "flex",
+                                alignItems: "center",
+                            }}>
+                                <FontAwesomeIcon icon={faGlobe} style={{ marginRight: "12px", width: "18px" }} />
                                 Jelajahi
                             </a>
-                            <a href="/book/questions" style={{ padding: "12px", borderRadius: "8px", color: "#64748b", textDecoration: "none", fontWeight: 500 }}>
-                                <FontAwesomeIcon icon={faQuestionCircle} style={{ marginRight: "10px" }} />
+                            <a href="/book/questions" style={{
+                                padding: "14px 12px",
+                                borderRadius: "10px",
+                                color: currentPage === "/book/questions" ? "#6366f1" : "#64748b",
+                                background: currentPage === "/book/questions" ? "#eef2ff" : "transparent",
+                                textDecoration: "none",
+                                fontWeight: 500,
+                                display: "flex",
+                                alignItems: "center",
+                            }}>
+                                <FontAwesomeIcon icon={faQuestionCircle} style={{ marginRight: "12px", width: "18px" }} />
                                 Tanya Jawab
                             </a>
-                            <a href="/book/add" style={{ padding: "12px", borderRadius: "8px", color: "#64748b", textDecoration: "none", fontWeight: 500 }}>
-                                <FontAwesomeIcon icon={faPenNib} style={{ marginRight: "10px" }} />
+                            <a href="/book/add" style={{
+                                padding: "14px 12px",
+                                borderRadius: "10px",
+                                color: currentPage === "/book/add" ? "#6366f1" : "#64748b",
+                                background: currentPage === "/book/add" ? "#eef2ff" : "transparent",
+                                textDecoration: "none",
+                                fontWeight: 500,
+                                display: "flex",
+                                alignItems: "center",
+                            }}>
+                                <FontAwesomeIcon icon={faPenNib} style={{ marginRight: "12px", width: "18px" }} />
                                 Tulis
                             </a>
+                            <div style={{ height: "1px", background: "#e2e8f0", margin: "8px 0" }} />
                             {username ? (
-                                <a href={`/profile/${username}`} style={{ padding: "12px", borderRadius: "8px", color: "#64748b", textDecoration: "none", fontWeight: 500 }}>
-                                    <FontAwesomeIcon icon={faUser} style={{ marginRight: "10px" }} />
+                                <a href={`/profile/${username}`} style={{
+                                    padding: "14px 12px",
+                                    borderRadius: "10px",
+                                    color: "#64748b",
+                                    textDecoration: "none",
+                                    fontWeight: 500,
+                                    display: "flex",
+                                    alignItems: "center",
+                                }}>
+                                    <FontAwesomeIcon icon={faUser} style={{ marginRight: "12px", width: "18px" }} />
                                     Profil
                                 </a>
                             ) : (
-                                <a href="/login" style={{ padding: "12px", borderRadius: "8px", color: "#6366f1", textDecoration: "none", fontWeight: 600 }}>
+                                <a href="/login" style={{
+                                    padding: "14px 12px",
+                                    borderRadius: "10px",
+                                    background: "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+                                    color: "#fff",
+                                    textDecoration: "none",
+                                    fontWeight: 600,
+                                    textAlign: "center",
+                                }}>
                                     Masuk
                                 </a>
                             )}

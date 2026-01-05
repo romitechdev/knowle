@@ -74,8 +74,8 @@ export default function LoginForm() {
                 width: "100%",
                 background: "#fff",
                 border: "1px solid #e4e4e7",
-                borderRadius: "24px",
-                padding: "40px",
+                borderRadius: "clamp(16px, 3vw, 24px)",
+                padding: "clamp(24px, 5vw, 40px)",
                 boxShadow: "0 10px 40px rgba(0, 0, 0, 0.08)",
             }}>
                 {/* Logo */}
