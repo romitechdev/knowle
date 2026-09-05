@@ -1,19 +1,19 @@
 # 📚 Knowle
 
-Platform berbagi pengetahuan untuk komunitas Indonesia. Tulis, baca, dan diskusi bersama.
+A knowledge-sharing platform for the Indonesian community. Write, read, and discuss together.
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
 ![MongoDB](https://img.shields.io/badge/MongoDB-green?logo=mongodb)
 
-## ✨ Fitur
+## ✨ Features
 
-- 📝 **Tulis Artikel** - Editor modern dengan formatting lengkap
-- 💬 **Tanya Jawab** - Forum diskusi dan Q&A
-- 🔍 **Pencarian** - Temukan artikel dengan mudah
-- 👤 **Profil** - Kelola profil dan lihat statistik
-- 💾 **Draft Privat** - Simpan tulisan sebelum dipublikasi
-- 📱 **Responsif** - Tampilan optimal di semua device
+- 📝 **Write Articles** - Modern editor with full formatting
+- 💬 **Q&A** - Discussion forum and Q&A
+- 🔍 **Search** - Find articles easily
+- 👤 **Profile** - Manage your profile and view statistics
+- 💾 **Private Drafts** - Save your writing before publishing
+- 📱 **Responsive** - Optimal display on all devices
 
 ## 🛠️ Tech Stack
 
@@ -30,11 +30,11 @@ Platform berbagi pengetahuan untuk komunitas Indonesia. Tulis, baca, dan diskusi
 
 - Node.js 18+
 - MongoDB database
-- ImageKit account (opsional)
+- ImageKit account (optional)
 
 ### Installation
 
-1. Clone repository
+1. Clone the repository
 ```bash
 git clone https://github.com/romitechdev/knowle.git
 cd knowle
@@ -45,12 +45,12 @@ cd knowle
 npm install
 ```
 
-3. Setup environment variables
+3. Set up environment variables
 ```bash
 cp .env.example .env
 ```
 
-Edit `.env` dengan konfigurasi kamu:
+Edit `.env` with your configuration:
 ```env
 MONGODBURI=mongodb+srv://...
 JWT_SECRET_KEY=your-secret-key
@@ -59,7 +59,7 @@ privateImg=your-imagekit-private-key
 urlEndpoint=https://ik.imagekit.io/your_id
 ```
 
-4. Run development server
+4. Run the development server
 ```bash
 npm run dev
 ```
@@ -85,14 +85,14 @@ src/
 
 ### Vercel (Recommended)
 
-1. Push ke GitHub
-2. Import project di [Vercel](https://vercel.com)
-3. Set environment variables
+1. Push to GitHub
+2. Import the project in [Vercel](https://vercel.com)
+3. Set the environment variables
 4. Deploy!
 
 ## 📄 License
 
-MIT License - bebas digunakan dan dimodifikasi.
+MIT License - free to use and modify.
 
 ## 👤 Author
 
