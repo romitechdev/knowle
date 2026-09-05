@@ -103,3 +103,7 @@ MIT License - free to use and modify.
 ---
 
 Made with ❤️ by Romi
+
+<!-- last-updated -->
+_Last updated: 2026-09-05_
+
